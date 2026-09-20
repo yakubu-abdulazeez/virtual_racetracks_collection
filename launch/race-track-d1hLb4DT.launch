@@ -1,5 +1,4 @@
 <launch>
-  <!-- Zeroed out transform args to put the track right at the center floor -->
   <node pkg="tf2_ros" type="static_transform_publisher" name="map_odom" args="0 0 0 0 0 0 map cooper_1_odom" />  
   <arg name="h" value="header: {frame_id: 'map', seq: 0, stamp: {nsecs: 0, secs: 0}}" />
   <arg name="orientation" value="orientation: {w: 1.0, x: 0.0, y: 0.0, z: 0.0}" />
